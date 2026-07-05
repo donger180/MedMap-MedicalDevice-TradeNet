@@ -1,0 +1,20 @@
+title: MED-MAP Market Access Knowledge Hub
+description: Data-driven medical product market access platform for Southeast Asia. 数据驱动的医疗产品市场准入与商业化平台。
+url: "https://www.med-map.org"
+baseurl: ""
+lang: en
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+collections:
+  docs:
+    output: true
+    permalink: /:path/
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+      image: /assets/med-map-og.png

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  {% seo %}
+</head>
+<body>
+<header>
+  <div class="wrap hero">
+    <h1>{{ page.title }}</h1>
+    <p>{{ page.description | default: site.description }}</p>
+    <div class="nav">
+      <a href="{{ '/' | relative_url }}">Home 首页</a>
+      <a href="{{ '/docs/platform/one-medmap/' | relative_url }}">One MedMap</a>
+      <a href="{{ '/docs/services/market-access/' | relative_url }}">Services 服务</a>
+      <a href="{{ '/docs/southeast-asia/singapore/' | relative_url }}">SEA 东南亚</a>
+      <a href="{{ '/docs/faq/faq/' | relative_url }}">FAQ</a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+{{ content }}
+</main>
+<footer>
+  <div class="wrap">
+    <strong>MED-MAP</strong> · Data-driven medical product market access platform · 数据驱动的医疗产品市场准入平台<br>
+    <span class="small">Website: www.med-map.org · Contact: don@medmap.sg</span>
+  </div>
+</footer>
+</body>
+</html>
